@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:my_app/features/user_auth/presentation/pages/homepage/home_page.dart';
 
@@ -212,6 +213,16 @@ Padding buildNotificationOption(
             fontWeight: FontWeight.w500,
             color: Colors.grey[600],
           ),
+        ),
+        Transform.scale(
+          scale: 0.7,
+          child: CupertinoSwitch(
+              activeColor: Colors.blue,
+              trackColor: Colors.grey,
+              value: value,
+              onChanged: (bool newValue) {
+                onChangeMethod(newValue);
+              }),
         ),
       ],
     ),
