@@ -85,21 +85,16 @@ class _SettingspageState extends State<Settingspage> {
                 ),
               ],
             ),
-            const Divider(height: 20, thickness: 1),
+            const Divider(height: 10, thickness: 1),
             const SizedBox(height: 10),
             buildNotificationOption(
                 'Theme Dark', valueNotify1, onChangeFunction1),
-            buildNotificationOption(
-                'Acount Activity', valueNotify2, onChangeFunction2),
-            buildNotificationOption(
-                'Opportunity', valueNotify3, onChangeFunction3),
-            const SizedBox(height: 50),
             Center(
               child: OutlinedButton(
                 style: OutlinedButton.styleFrom(
                   backgroundColor: Colors.blue,
                   padding:
-                      const EdgeInsets.symmetric(horizontal: 40, vertical: 10),
+                      const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20),
                   ),
